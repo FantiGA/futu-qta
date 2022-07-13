@@ -83,6 +83,13 @@ ipython_config.py
 
 # pyenv
 .python-version
+.idea/
+# celery beat schedule file
+celerybeat-schedule
+workspace.xml
+# SageMath parsed files
+*.sage.py
+.idea/workspace.xml
 
 # pipenv
 #   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
