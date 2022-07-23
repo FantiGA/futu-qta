@@ -1,17 +1,15 @@
 '''
 Author: fantiga
 Date: 2022-07-13 12:47:07
-LastEditTime: 2022-07-13 12:47:08
+LastEditTime: 2022-07-23 16:38:03
 LastEditors: fantiga
 Description: 
-FilePath: /futu-qta/action.py
+FilePath: /futu-qta/utils/action.py
 '''
 
 from config import *
 
 # 解锁交易
-
-
 def unlock_trade():
     if TRADING_ENVIRONMENT == TrdEnv.REAL:
         ret, data = trade_context.unlock_trade(TRADING_PWD)
