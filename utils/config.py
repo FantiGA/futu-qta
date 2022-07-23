@@ -1,10 +1,10 @@
 '''
 Author: fantiga
 Date: 2022-07-13 12:40:02
-LastEditTime: 2022-07-13 13:21:37
+LastEditTime: 2022-07-23 17:01:07
 LastEditors: fantiga
-Description: 
-FilePath: /futu-qta/config.py
+Description: 配置包
+FilePath: /futu-qta/utils/config.py
 '''
 
 from futu import *

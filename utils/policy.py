@@ -1,10 +1,10 @@
 '''
 Author: fantiga
 Date: 2022-07-13 12:45:37
-LastEditTime: 2022-07-13 12:48:50
+LastEditTime: 2022-07-23 17:05:20
 LastEditors: fantiga
-Description: 
-FilePath: /futu-qta/policy.py
+Description: 策略包
+FilePath: /futu-qta/utils/policy.py
 '''
 
 from action import *
@@ -46,23 +46,23 @@ def on_bar_open():
     if holding_position == 0:
         if bull_or_bear == 1:
             print('【操作信号】 做多信号，建立多单。')
-            open_position(TRADING_SECURITY)
+            # open_position(TRADING_SECURITY)
         else:
             print('【操作信号】 做空信号，不开空单。')
     elif holding_position > 0:
         if bull_or_bear == -1:
             print('【操作信号】 做空信号，平掉持仓。')
-            close_position(TRADING_SECURITY, holding_position)
+            # close_position(TRADING_SECURITY, holding_position)
         else:
             print('【操作信号】 做多信号，无需加仓。')
 
 
 # 委托成交有变化时运行一次
-def on_fill(data):
-    pass
+# def on_fill(data):
+#     pass
 
 
 # 订单状态有变化时运行一次
-def on_order_status(data):
-    if data['code'][0] == TRADING_SECURITY:
-        show_order_status(data)
+# def on_order_status(data):
+#     if data['code'][0] == TRADING_SECURITY:
+#         show_order_status(data)
