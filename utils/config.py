@@ -1,7 +1,7 @@
 '''
 Author: fantiga
 Date: 2022-07-13 12:40:02
-LastEditTime: 2022-07-23 17:01:07
+LastEditTime: 2022-07-25 16:00:03
 LastEditors: fantiga
 Description: 配置包
 FilePath: /futu-qta/utils/config.py
@@ -16,10 +16,17 @@ FUTUOPEND_PORT = 11111  # FutuOpenD 监听端口
 TRADING_ENVIRONMENT = TrdEnv.SIMULATE  # 交易环境：真实 / 模拟
 TRADING_MARKET = TrdMarket.HK  # 交易市场权限，用于筛选对应交易市场权限的账户
 TRADING_PWD = '123456'  # 交易密码，用于解锁交易
-TRADING_PERIOD = KLType.K_1M  # 信号 K 线周期
-TRADING_SECURITY = 'HK.00700'  # 交易标的
+# TRADING_PERIOD = KLType.K_1M  # 信号 K 线周期
+TRADING_SECURITY = [
+    'HK.00700'
+]  # 交易标的
 FAST_MOVING_AVERAGE = 1  # 均线快线的周期
 SLOW_MOVING_AVERAGE = 3  # 均线慢线的周期
+SUBTYPE_LIST = [
+    # SubType.TICKER, SubType.ORDER_BOOK, TRADING_PERIOD]
+    SubType.QUOTE,
+    SubType.BROKER
+]
 
 quote_context = OpenQuoteContext(
     host=FUTUOPEND_ADDRESS, port=FUTUOPEND_PORT)  # 行情对象

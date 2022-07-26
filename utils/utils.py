@@ -1,13 +1,13 @@
 '''
 Author: fantiga
 Date: 2022-07-13 12:42:55
-LastEditTime: 2022-07-23 16:58:24
+LastEditTime: 2022-07-25 10:18:48
 LastEditors: fantiga
 Description: 实用类包
 FilePath: /futu-qta/utils/utils.py
 '''
 
-from policy import *
+from .policy import *
 
 ################################ 框架实现部分，可忽略不看 ###############################
 

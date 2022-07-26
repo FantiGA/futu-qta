@@ -1,13 +1,13 @@
 '''
 Author: fantiga
 Date: 2022-07-13 12:45:37
-LastEditTime: 2022-07-23 17:05:20
+LastEditTime: 2022-07-25 10:19:04
 LastEditors: fantiga
 Description: 策略包
 FilePath: /futu-qta/utils/policy.py
 '''
 
-from action import *
+from .action import *
 
 ############################ 填充以下函数来完成您的策略 ############################
 # 策略启动时运行一次，用于初始化策略

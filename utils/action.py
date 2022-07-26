@@ -1,13 +1,13 @@
 '''
 Author: fantiga
 Date: 2022-07-13 12:47:07
-LastEditTime: 2022-07-23 17:04:48
+LastEditTime: 2022-07-25 10:19:10
 LastEditors: fantiga
 Description: 动作包
 FilePath: /futu-qta/utils/action.py
 '''
 
-from config import *
+from .config import *
 
 # 解锁交易
 def unlock_trade():
